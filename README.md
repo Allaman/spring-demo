@@ -7,6 +7,7 @@ This is an rather minimalistic Java Spring Boot Demo application illustrating ex
 - Java JDK >1.8
 - Maven
 - Docker
+- Docker-compose
 - default port 8080
 
 ## Build Docker Image
