@@ -5,6 +5,7 @@ services:
     image: rootknecht.net/spring-demo:latest
     environment:
       - foo=bar
+      - stage=prod
     env_file:
       - ./conf/data.env
     ports:
