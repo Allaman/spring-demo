@@ -1,6 +1,6 @@
 # Spring Demo Application
 
-This is an rather minimalistic Java Spring Boot Demo application illustrating external configuration using different methods in a Docker deployment (see [Showcased](#Showcased) for more information).
+This is an rather minimalistic Java Spring Boot Demo application illustrating external configuration using different methods in a Docker deployment (see [Showcased](#showcased) for more information).
 
 ## Requirements
 
