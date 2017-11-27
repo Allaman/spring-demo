@@ -35,7 +35,7 @@ Clone or download thist repository and change into this folder.
 
 ## Official Documentation
 
-[spring.io getting started](https://spring.io/guides/gs/spring-boot/)
-[spring.io external config](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html)
-[spring.io endpoint security](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-monitoring.html)
-[spring.io spring application properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
+- [spring.io getting started](https://spring.io/guides/gs/spring-boot/)
+- [spring.io external config](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html)
+- [spring.io endpoint security](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-monitoring.html)
+- [spring.io spring application properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
