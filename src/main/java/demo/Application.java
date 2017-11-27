@@ -17,12 +17,14 @@ public class Application {
     private String foo;
 
     @Autowired
-    private ApplicationProperties applicationProperties;
+    private YamlProperties yamlProperties;
+    @Autowired
+    private Properties properties;
 
 
     @RequestMapping("/")
     public String home() {
-        return "Hello " + foo + "<br>" + applicationProperties;
+        return "Hello " + foo + "<br>---<br>" + yamlProperties + "<br>---<br>" + properties;
     }
 
     public static void main(String[] args) {

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties("server")
-public class ApplicationProperties {
+public class YamlProperties {
 
     private String email;
     private List<Cluster> cluster = new ArrayList<>();
@@ -60,7 +60,7 @@ public class ApplicationProperties {
 
     @Override
     public String toString() {
-        return "ServerProperties{" +
+        return "YamlProperties{" +
                 "email='" + email + '\'' +
                 ", cluster=" + cluster +
                 '}';
