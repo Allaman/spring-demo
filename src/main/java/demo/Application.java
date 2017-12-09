@@ -32,8 +32,8 @@ public class Application {
     }
 
     @RequestMapping("/content")
-    public Content greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Content(counter.incrementAndGet(), String.format(template, name));
+    public Post greeting(@RequestParam(value="name", defaultValue="World") String name) {
+        return new Post(counter.incrementAndGet(), String.format(template, name));
     }
 
     public static void main(String[] args) {

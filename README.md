@@ -1,6 +1,14 @@
 # Spring Demo Application
 
-This is an rather minimalistic Java Spring Boot Demo application illustrating external configuration using different methods in a Docker deployment (see [Showcased](#showcased) for more information).
+This is an rather minimalistic Java Spring Boot Demo application illustrating
+
+1. Systemenvironment variables from .env file
+1. Systemenvironment variables from docker-compose file
+1. Config variables from .yaml file
+1. Config variable from .properties file including nesting and arrays
+1. Environment-based spring profile configuration
+1. Simple REST service
+1. Docker deployment
 
 ## Requirements
 
@@ -24,14 +32,6 @@ Clone or download thist repository and change into this folder.
 
 - localhost:8080
 - Actuator security is disabled: curl http://localhost:8080/env
-
-## Showcased
-
-1. Systemenvironment variables from .env file
-1. Systemenvironment variables from docker-compose file
-1. Config variables from .yaml file
-1. Config variable from .properties file including nesting and arrays
-1. Environment-based spring profile configuration
 
 ## Official Documentation
 
