@@ -1,7 +1,7 @@
-version: "3"
+version: "3.1"
 
 services:
-  demo:
+  spring-demo:
     container_name: spring-demo
     image: rootknecht.net/spring-demo:latest
     environment:
@@ -17,5 +17,8 @@ services:
       - MANAGEMENT_ENDPOINT_PROMETHEUS_ENABLED=true
     env_file:
       - ./conf/data.env
+    restart: always
+    networks:
+      - back-tier
     ports:
       - 8080:8080
