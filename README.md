@@ -23,7 +23,7 @@ Clone or download thist repository and cd into this folder.
 mvn package dockerfile:build
 ```
 
-## Run Docker Image
+## Start demo application
 
 ```bash
 docker-copose up [-d]
@@ -45,13 +45,15 @@ docker-copose up [-d]
 
 ## Monitoring
 
+![](https://knowledge.rootknecht.net/images/d/c/3/2/b/dc32b9e7757420418334018a1bf7d22838e4b21c-grafana.png)
+
 ```bash
 docker-compose -f docker-compose.prom.yml up [-d]
 ```
 
 Access [Grafana](localhost:3000) (admin:admin) and [Prometheus](localhost:9090) and find a configured datasource as well as dashboards for showing prometheus itself and a basic java Micrometer dashboard.
 
-## Clean up containers
+## Stop and clean up containers
 
 ```bash
 docker-compose -f docker-compose.prom.yml -f docker-compose.yml down --remove-orphans
