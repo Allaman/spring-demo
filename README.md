@@ -14,7 +14,7 @@ This is an rather minimalistic Java Spring Boot Demo application illustrating ex
 
 Clone or download thist repository and change into this folder.
 
-- mvn package docker:build
+- mvn package dockerfile:build
 
 ## Run Docker Image
 
@@ -24,6 +24,7 @@ Clone or download thist repository and change into this folder.
 
 - localhost:8080
 - Actuator security is disabled: curl http://localhost:8080/env
+- All actuators are exposed and accessible: http://localhost:8080/actuator/
 
 ## Showcased
 
@@ -39,3 +40,5 @@ Clone or download thist repository and change into this folder.
 - [spring.io external config](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html)
 - [spring.io endpoint security](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-monitoring.html)
 - [spring.io spring application properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
+- [Spring Boot Metric](https://spring.io/blog/2018/03/16/micrometer-spring-boot-2-s-new-application-metrics-collector)
+- [Exposing Endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints-exposing-endpoints)
