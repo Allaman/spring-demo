@@ -45,7 +45,7 @@ docker-copose up [-d]
 
 ## Monitoring
 
-![](https://knowledge.rootknecht.net/images/d/c/3/2/b/dc32b9e7757420418334018a1bf7d22838e4b21c-grafana.png)
+![Dashboard](https://knowledge.rootknecht.net/user/pages/01.home/monitoring-with-prometheus/grafana.png)
 
 ```bash
 docker-compose -f docker-compose.prom.yml up [-d]
