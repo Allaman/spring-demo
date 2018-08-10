@@ -47,6 +47,8 @@ docker-copose up [-d]
 
 ![Dashboard](https://knowledge.rootknecht.net/user/pages/01.home/monitoring-with-prometheus/grafana.png)
 
+![Dashboard2](https://knowledge.rootknecht.net/user/pages/01.home/monitoring-with-prometheus/grafana2.png)
+
 ```bash
 docker-compose -f docker-compose.prom.yml up [-d]
 ```
