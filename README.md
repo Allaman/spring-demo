@@ -1,10 +1,10 @@
 # Java Spring Boot Demo Application
 
-This is an rather minimalistic Java Spring Boot Demo application illustrating external configuration using different methods in a Docker deployment (see [Showcased](#showcased) for more information).
+This is an rather minimalism Java Spring Boot Demo application illustrating external configuration using different methods in a Docker deployment (see [Showcased](#showcased) for more information).
 
-Additionally, you can spin up a minimal monitoring setup with preconfigured [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) services
+Additionally, you can spin up a minimal monitoring setup with preconfigured [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) services including metrics from the JVM, your hosts and your docker container. The stack itself is deployed as docker container so there is **no pollution** of your system.
 
-> There is also a branch for the spring-boot 1.4 release (not fully equivalet)
+> There is also a branch for the spring-boot 1.4 release (not fully equivalent)
 
 ## Requirements
 
@@ -17,7 +17,7 @@ Additionally, you can spin up a minimal monitoring setup with preconfigured [Pro
 
 ## Build Docker Image
 
-Clone or download thist repository and cd into this folder.
+Clone or download this repository and cd into this folder.
 
 ```bash
 mvn package dockerfile:build
@@ -37,10 +37,10 @@ docker-copose up [-d]
 
 ## External configuration showcased
 
-1. Systemenvironment variables from .env file
-2. Systemenvironment variables from docker-compose file
-3. Config variables from .yaml file
-4. Config variable from .properties file including nesting and arrays
+1. System environment variables from .env file
+2. System environment variables from docker-compose file
+3. Config variables from a YAML file
+4. Config variable from a application properties file including nesting and arrays
 5. Environment-based spring profile configuration
 
 ## Monitoring
@@ -53,7 +53,7 @@ docker-copose up [-d]
 docker-compose -f docker-compose.prom.yml up [-d]
 ```
 
-Access [Grafana](localhost:3000) (admin:admin) and [Prometheus](localhost:9090) and find a configured datasource as well as dashboards for showing prometheus itself and a basic java Micrometer dashboard.
+Access [Grafana](localhost:3000) (admin:admin) and [Prometheus](localhost:9090) and find a configured data source as well as dashboards for showing Prometheus itself and a basic java Micrometer dashboard.
 
 ## Stop and clean up containers
 
