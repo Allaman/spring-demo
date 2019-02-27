@@ -1,0 +1,11 @@
+FROM alpine
+
+RUN apk update &&\
+      apk upgrade &&\
+      apk add openjdk8 maven docker ca-certificates
+
+RUN mkdir /workdir
+WORKDIR /workdir
+ADD . $WORKDIR
+
+ENTRYPOINT ["sh", "./build_in_docker.sh"]
