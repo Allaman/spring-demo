@@ -24,13 +24,13 @@ If you want to build the application without Docker:
 Clone or download this repository and cd into this folder.
 
 ```sh
-docker build -f Dockerfile.build -t build-image .
+docker build -f Dockerfile.build -t spring-builder .
 ```
 
 ## Build the application inside the build container
 
 ```sh
-docker run -v /var/run/docker.sock:/var/run/docker.sock spring
+docker run -v --rm --name spring-builder /var/run/docker.sock:/var/run/docker.sock spring-builder
 ```
 
 ## Start demo application and Prometheus stack
