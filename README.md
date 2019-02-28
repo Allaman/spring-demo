@@ -8,25 +8,41 @@ Additionally, you can spin up a minimal monitoring setup with preconfigured [Pro
 
 ## Requirements
 
-- Java JDK >1.8
-- Maven
 - Docker
 - Docker-compose
-- default port 8080
+- default port 8080 for the application
 - port 3000 and 9090 for Grafana and Prometheus
+- port 9100 and 9200 for NodeExporter and cAdvisor
 
-## Build Docker Image
+If you want to build the application without Docker:
+
+- Java JDK >1.8
+- Maven
+
+## Build the build Docker image
 
 Clone or download this repository and cd into this folder.
 
-```bash
-mvn package dockerfile:build
+```sh
+docker build -f Dockerfile.build -t build-image .
 ```
 
-## Start demo application
+## Build the application inside the build container
+
+```sh
+docker run -v /var/run/docker.sock:/var/run/docker.sock spring
+```
+
+## Start demo application and Prometheus stack
 
 ```bash
-docker-copose up [-d]
+sh start.sh
+```
+
+## Stop demo application and Prometheus stack
+
+```bash
+sh stop.sh
 ```
 
 ## Accessing the demo application
@@ -49,17 +65,8 @@ docker-copose up [-d]
 
 ![Dashboard2](https://knowledge.rootknecht.net/user/pages/01.home/monitoring-with-prometheus/grafana2.png)
 
-```bash
-docker-compose -f docker-compose.prom.yml up [-d]
-```
 
 Access [Grafana](localhost:3000) (admin:admin) and [Prometheus](localhost:9090) and find a configured data source as well as dashboards for showing Prometheus itself and a basic java Micrometer dashboard.
-
-## Stop and clean up containers
-
-```bash
-docker-compose -f docker-compose.prom.yml -f docker-compose.yml down --remove-orphans
-```
 
 ## Official Documentation
 
