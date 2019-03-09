@@ -30,7 +30,7 @@ docker build -f Dockerfile.build -t spring-builder .
 ## Build the application inside the build container
 
 ```sh
-docker run -v --rm --name spring-builder /var/run/docker.sock:/var/run/docker.sock spring-builder
+docker run --rm --name spring-builder -v /var/run/docker.sock:/var/run/docker.sock spring-builder
 ```
 
 ## Start demo application and Prometheus stack
